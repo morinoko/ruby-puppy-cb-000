@@ -9,11 +9,11 @@ class Dog
   end
 
   def self.all
-    @@all.each{ |dog| puts dog.name }
+    puts @@all.map{ |dog| dog.name }
     
     # Other solutions:
     # @@all.map(&:name) - another way to solve, but more complex than needed for this example
-    # puts @@all.map{ |dog| dog.name }
+    # @@all.each{ |dog| puts dog.name }
   end
   
   def self.clear_all
